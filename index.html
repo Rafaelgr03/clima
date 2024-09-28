@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicación del Clima</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <!-- Video de fondo -->
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="clima/soleado.mp4" type="video/mp4">
+    Tu navegador no soporta video en HTML5.
+  </video>
+
+  <div class="container">
+    <h1>Consulta el Clima</h1>
+    <input type="text" id="cityInput" placeholder="Ingresa una ciudad">
+    <button id="searchButton">Buscar</button>
+
+    <div id="weatherResult" style="display: none;">
+      <h2 id="cityName"></h2>
+      <p id="temperature"></p>
+      <p id="description"></p>
+    </div>
+  </div>
+
+  
+
+  <script src="clima.js"></script>
+</body>
+</html>
